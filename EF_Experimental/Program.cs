@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using EF_Experimental;
+using System;
+
+Northwind db = new();
+Console.WriteLine($"Provider: {db.Database.ProviderName}");
