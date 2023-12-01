@@ -2,9 +2,6 @@
 using Microsoft.Data.SqlClient;
 using System;
 
-Northwind db = new();
-Console.WriteLine($"Provider: {db.Database.ProviderName}");
-
 // Check if the connection is working
 string connectionString = "Server=localhost;Database=Northwind;User Id=sa;Password=Hitman4719781978;";
 using (var connection = new SqlConnection(connectionString))
@@ -19,3 +16,7 @@ using (var connection = new SqlConnection(connectionString))
         Console.WriteLine($"Connection failed: {ex.Message}");
     }
 }
+
+QueryingCategories();
+FilteredIncludes();
+QueryingProducts();
