@@ -11,7 +11,7 @@ namespace EF_Experimental
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string connectionString = "Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword;";
+            string connectionString = "Server=localhost;Database=Northwind;User Id=sa;Password=Hitman4719781978;";
             optionsBuilder.UseSqlServer(connectionString);
         }
     }
